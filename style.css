@@ -1,3 +1,22 @@
+body {
+    background-color: #d9bccb;
+}
+
+/*! non se lo sta prendendo, hai messo uno style inline dopo ricordati di fixare*/
+h5 .card-title {
+    color: #b17694;
+}
+
 ul {
     list-style-type: none;
+}
+
+.card {
+    border: 2px solid #b17694;
+}
+
+.separator {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 2px solid #b17694;
 }

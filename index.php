@@ -1,17 +1,20 @@
 <?php 
 include __DIR__ . '/Product.php';
+include __DIR__ . '/Dog.php';
 
 class Product {
     public $name;
     public $price;
     public $code;
     public $image;
+    public $genre;
 
-    public function __construct($name, $price, $code, $image) {
+    public function __construct($name, $price, $code, $image, $genre) {
         $this->name = $name;
         $this->price = $price;
         $this->code = $code;
         $this->image = $image;
+        $this->genre = $genre;
     }
 };
 
@@ -33,7 +36,7 @@ $products = [$prodotto1, $prodotto2];
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-        <div class="container">    
+    <div class="container">    
         <header> 
             <h1 class="text-center my-5">Zootropolis</h1>
         </header>
@@ -41,20 +44,21 @@ $products = [$prodotto1, $prodotto2];
         <main>
             <div class="container">
                 <div class="row ">
-                <?php foreach($products as $product) : ?>
-                    <div class="col mb-5 flex-grow-0">
-                        <div class="card" style="width: 18rem;">
-                        <img class="product-img" src="<?= $product->image ?>" alt="<?= $product->name ?>">
-                            <div class="card-body">
-                                <h5 class="card-title"><?= $product->name ?></h5>
-                                <ul>
-                                    <li>Prezzo: <?= $product->price ?>€</li>
-                                    <li>Codice prodotto: <?= $product->code ?></li> 
-                                </ul>
-                                <!-- <address> Pinco pallo </address> -->
+                    <?php foreach($products as $product) : ?>
+                        <div class="col mb-5 flex-grow-0">
+                            <div class="card" style="width: 18rem;">
+                                <img class="product-img" src="<?= $product->image ?>" alt="<?= $product->name ?>">
+                                <div class="separator"></div>
+                                <div class="card-body">
+                                    <!--Dopo risolvi questo color inline-->
+                                    <h5 class="card-title text-center" style="color: #b17694;"><?= $product->name ?></h5>
+                                    <ul>
+                                        <li>Prezzo: <?= $product->price ?>€</li>
+                                        <li>Codice prodotto: #<?= $product->code ?></li> 
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     <?php endforeach?>
                 </div>
             </div>
