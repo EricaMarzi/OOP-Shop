@@ -18,7 +18,7 @@ class Product {
     }
 };
 
-$products = [$prodotto1, $prodotto2];
+$products = [$prodotto1, $prodotto2, $prodotto3, $prodotto4, $prodotto5, $prodotto6, $prodotto7, $prodotto8];
 
 ?>
 
@@ -51,7 +51,7 @@ $products = [$prodotto1, $prodotto2];
                                 <div class="separator"></div>
                                 <div class="card-body">
                                     <!--Dopo risolvi questo color inline-->
-                                    <h5 class="card-title text-center" style="color: #b17694;"><?= $product->name ?></h5>
+                                    <h5 class="card-title text-center"><?= $product->name ?></h5>
                                     <ul>
                                         <li>Prezzo: <?= $product->price ?>€</li>
                                         <li>Codice prodotto: #<?= $product->code ?></li> 

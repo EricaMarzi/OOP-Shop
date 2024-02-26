@@ -1,9 +1,14 @@
 body {
-    background-color: #d9bccb;
+    background-color: #e6dde2d5;
 }
 
-/*! non se lo sta prendendo, hai messo uno style inline dopo ricordati di fixare*/
-h5 .card-title {
+img {
+    height: 300px;
+    width: auto;
+}
+
+.card-title {
+    margin-top: 10px;
     color: #b17694;
 }
 
@@ -19,4 +24,8 @@ ul {
     width: 80%;
     margin: 0 auto;
     border-bottom: 2px solid #b17694;
+}
+
+.card-body {
+    height: 170px;
 }
