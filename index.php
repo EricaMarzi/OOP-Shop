@@ -1,5 +1,5 @@
 <?php 
-// include __DIR__ . '/test.php';
+include __DIR__ . '/Product.php';
 
 class Product {
     public $name;
@@ -15,12 +15,8 @@ class Product {
     }
 };
 
-$prodotto1 = new Product ('Crocchette', 5, 1, 'https://arcaplanet.vtexassets.com/arquivos/ids/284621/Mini-Adult.jpg?v=638182891693570000');
-$prodotto2 = new Product ('Voliera', 8, 2, 'https://arcaplanet.vtexassets.com/arquivos/ids/258384/voliera-wilma1.jpg');
-
 $products = [$prodotto1, $prodotto2];
 
-// var_dump($products);
 ?>
 
 <!DOCTYPE html>
